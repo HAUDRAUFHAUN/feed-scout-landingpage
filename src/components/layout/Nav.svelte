@@ -47,6 +47,7 @@
     </main>
 
     <button
+      aria-label="Switch Theme"
       on:click={() => setTheme()}
       class="focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md flex justify-center items-center"
       ><svg
@@ -77,6 +78,7 @@
 
   <nav class="flex justify-between md:hidden px-2 pt-3 pb-4">
     <button
+      aria-label="Toggle mobile Menu"
       class="focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md flex justify-center items-center"
     >
       <svg
@@ -98,6 +100,7 @@
     </header>
 
     <button
+      aria-label="Switch Theme"
       on:click={() => setTheme()}
       class="focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md flex justify-center items-center"
       ><svg
