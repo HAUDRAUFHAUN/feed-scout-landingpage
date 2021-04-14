@@ -10,6 +10,7 @@
       name: "GitHub",
       route: "https://github.com/HAUDRAUFHAUN/feed-scout",
       target: "_blank",
+      noopener: true,
     },
   ];
 
@@ -38,7 +39,7 @@
       {#each menuItems as item}
         <a
           href={item.route}
-          rel="prefetch"
+          rel={item.noopener ? "noopener" : "prefetch"}
           target={item.target}
           class="font-medium text-teal-500 dark:text-teal-50 dark:hover:text-teal-600 py-3 px-4 rounded-md hover:bg-teal-50 dark:hover:bg-teal-100"
           >{item.name}</a
